@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <a href="logo" class="logo"><img src="MSV logo_126x106.jpeg"></a>
+    <div class="topnav">
+        <a href="newemployee.html"> קליטת עובד חדש</a>
+        <a href="visitsummary.html">סיכום ביקור</a>
+        <a class="active" href="client.html">כרטיס לקוח קיים</a>
+        <a href="newclient.html">הוספת לקוח חדש</a>
+        <a href="appointments.html">קביעת תורים</a>
+        <a href="about.html">About</a>
+        <a href="login.html">כניסה למערכת</a>
+        <a href="index.html">דף הבית</a>
+    </div>
+    <h1>כרטיס לקוח</h1>
+    <div id="petdetails">
+        <h2 style="text-align: right;">פרטי בעל החיים:</h2>
+        <table class="newclient">
+            <tr>
+                <td>
+                    <label for="petchip">מספר שבב:</label><input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="petname">שם:</label><input type="text" required></td>
+                <td><label for="petage">גיל:</label><input type="number" required></td>
+                <td><label for="sex">מין:</label><select name="petsex">
+                        <option value="male">זכר</option>
+                        <option value="female">נקבה</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="petkind">סוג:</label><select name="petkind" required>
+                        <option value="dog">כלב</option>
+                        <option value="cat">חתול</option>
+                        <option value="parrot">תוכי</option>
+                        <option value="rodant">מכרסם</option>
+                        <option value="reptile">זוחל</option>
+                    </select></td>
+                <td><label for="breed">גזע:</label><input type="text" required></td>
+                <td><label for="color">צבע:</label><input type="text" required></td>
+                <td><label for="size">גודל:</label><select name="petsize">
+                        <option value="small">קטן</option>
+                        <option value="medium">בינוני</option>
+                        <option value="large">גדול</option>
+                        <option value="xlarge">ענק</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="castration">עיקור/סירוס:</label><select name="castration" required>
+                        <option value="yes">כן</option>
+                        <option value="no">לא</option>
+                    </select></td>
+                <td><label for="castrationdate">תאריך עיקור/סירוס:</label><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label for="sensitivities">רגישויות:</label><input type="text" name="sesitivities"></input></td>
+                <td><label for="scomments">הערות מיוחדות:</label><input type="text" name="scomments"></input></td>
+            </tr>
+        </table>
+    </div><br><br><br>
+    <h1>פנקס חיסונים</h1>
+    <div id="vacdiv">
+        <table id="vaccinations">
+            <tr>
+                <th>קוד חיסון</th>
+                <th>סוג</th>
+                <th>תאריך ביצוע</th>
+                <th>עובד מבצע</th>
+            </tr>
+            <tr>
+                <td><input type="number"></td>
+                <td><input type="text"></td>
+                <td><input type="date"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="number"></td>
+                <td><input type="text"></td>
+                <td><input type="date"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="number"></td>
+                <td><input type="text"></td>
+                <td><input type="date"></td>
+                <td><input type="text"></td>
+            </tr>
+
+        </table>
+
+    </div>
+</body>
+
+</html>

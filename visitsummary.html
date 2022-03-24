@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="logo" class="logo"><img src="MSV logo_126x106.jpeg"></a>
+    <div class="topnav">
+        <a href="newemployee.html"> קליטת עובד חדש</a>
+        <a class="active" href="visitsummary.html">סיכום ביקור</a>
+        <a href="client.html">כרטיס לקוח קיים</a>
+        <a href="newclient.html">הוספת לקוח חדש</a>
+        <a href="appointments.html">קביעת תורים</a>
+        <a  href="about.html">About</a>
+        <a href="login.html">כניסה למערכת</a>
+        <a href="index.html">דף הבית</a>
+    </div>
+    <h1>טופס סיכום ביקור במרפאה</h1>
+    <div id="visitsummarydiv">
+        <form>
+            <div id="petdetails">
+                <h2 style="text-align: right;">פרטי בעל החיים:</h2>
+                <table class="newclient">
+                    <tr>
+                        <td>
+                            <label for="petchip">מספר שבב:</label><input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="petname">שם:</label><input type="text" required></td>
+                        <td><label for="petage">גיל:</label><input type="number" required></td>
+                        <td><label for="sex">מין:</label><select name="petsex">
+                                <option value="male">זכר</option>
+                                <option value="female">נקבה</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="petkind">סוג:</label><select name="petkind" required>
+                                <option value="dog">כלב</option>
+                                <option value="cat">חתול</option>
+                                <option value="parrot">תוכי</option>
+                                <option value="rodant">מכרסם</option>
+                                <option value="reptile">זוחל</option>
+                            </select></td>
+                        <td><label for="breed">גזע:</label><input type="text" required></td>
+                        <td><label for="color">צבע:</label><input type="text" required></td>
+                        <td><label for="size">גודל:</label><select name="petsize">
+                                <option value="small">קטן</option>
+                                <option value="medium">בינוני</option>
+                                <option value="large">גדול</option>
+                                <option value="xlarge">ענק</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="castration">עיקור/סירוס:</label><select name="castration" required>
+                                <option value="yes">כן</option>
+                                <option value="no">לא</option>
+                            </select></td>
+                        <td><label for="castrationdate">תאריך עיקור/סירוס:</label><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sensitivities">רגישויות:</label><input type="text" name="sesitivities"></input>
+                        </td>
+                        <td><label for="scomments">הערות מיוחדות:</label><input type="text" name="scomments"></input>
+                        </td>
+                    </tr>
+                </table>
+            </div><br><br><br>
+            <div id="visitsummary">
+                <h2 style="text-align: right;">פרטי ביקור:</h2>
+                <table id="visittable">
+                    <tr>
+                        <td>
+                            <lable for="dateofvisit">תאריך הביקור:</lable><br><input type="date"><br>
+                            <lable for="timeofvisit">שעת הביקור:</lable><br><input type="time">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="weight">משקל:</label><input type="number" required><select name="weightunit">
+                                <option value="kg">ק"ג</option>
+                                <option value="gram">גרם</option>
+                            </select></td>
+                        <td><label for="fever">חום:</label><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="visitpurpose" style="vertical-align:top">סיבת הביקור:</label><textarea
+                                name="visitpurpose" rows="7" cols="100"></textarea></td>
+                        <td><label for="vacc">מתן חיסון:</label><select name="vacc" multiple size="3"
+                                style="width: 100%;">
+                                <option value="vacc1">חיסון 1</option>
+                                <option value="vacc2">חיסון 2</option>
+                                <option value="vacc3">חיסון 3</option>
+                                <option value="vacc4">חיסון 4</option>
+                                <option value="vacc5">חיסון 5</option>
+                                <option value="vacc6">חיסון 6</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="diagnoses">אבחנות:</label><select name="diagnoses" multiple size="5"
+                                style="width: 100%;">
+                                <option value="diag1">אבחנה 1</option>
+                                <option value="diag2">אבחנה 2</option>
+                                <option value="diag3">אבחנה 3</option>
+                                <option value="diag4">אבחנה 4</option>
+                                <option value="diag5">אבחנה 5</option>
+                                <option value="diag6">אבחנה 6</option>
+                                <option value="diag7">אבחנה 7</option>
+                                <option value="diag8">אבחנה 8</option>
+                                <option value="diag9">אבחנה 9</option>
+                                <option value="diag10">אבחנה 10</option>
+                            </select></td>
+                        <td><label for="tests">בדיקות:</label><select name="tests" multiple size="5"
+                                style="width: 100%;">
+                                <option value="test1">בדיקה 1</option>
+                                <option value="test2">בדיקה 2</option>
+                                <option value="test3">בדיקה 3</option>
+                                <option value="test4">בדיקה 4</option>
+                                <option value="test5">בדיקה 5</option>
+                                <option value="test6">בדיקה 6</option>
+                                <option value="test7">בדיקה 7</option>
+                                <option value="test8">בדיקה 8</option>
+                                <option value="test9">בדיקה 9</option>
+                                <option value="test10">בדיקה 10</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="medicines" style="vertical-align:top">תרופות ומינונים:</label><textarea
+                                name="medicines" rows="3" cols="50"></textarea></td>
+                        <td><label for="rec" style="vertical-align:top">המלצות:</label><textarea name="recs" rows="3"
+                                cols="50"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <button type="submit" class="submit-btn">אישור</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

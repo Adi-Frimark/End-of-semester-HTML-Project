@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="logo" class="logo"><img src="MSV logo_126x106.jpeg"></a>
+    <div class="topnav">
+        <a href="newemployee.html"> קליטת עובד חדש</a>
+        <a href="visitsummary.html">סיכום ביקור</a>
+        <a href="client.html">כרטיס לקוח קיים</a>
+        <a href="newclient.html">הוספת לקוח חדש</a>
+        <a href="appointments.html">קביעת תורים</a>
+        <a href="about.html">About</a>
+        <a href="login.html">כניסה למערכת</a>
+        <a class="active" href="index.html">דף הבית</a>
+    </div>
+</body>
+<h1>התורים שלי להיום</h1>
+<div id="myappoinments">
+    <table>
+        <tr>
+            <th>שעה</th>
+            <th>שם הלקוח</th>
+            <th>שם בעל החיים</th>
+            <th>סוג בעל חיים</th>
+            <th>מספר טלפון נייד</th>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+        </tr>
+    </table>
+</div><br><br><br>
+<div>
+    <div id="myDIV" class="header">
+        <h2>תזכורות ומשימות לביצוע</h2>
+        <span onclick="newElement()" class="addBtn">הוספה</span>
+        <input type="text" id="myInput" placeholder="התזכורת/משימה">
+      </div>
+      
+      <ul id="myUL">
+        <li>לשוחח עם הלקוחה עדי פריימרק 0503388466 בנוגע לתוצאות הבדיקה של ויסקי</li>
+        <li class="checked">לשלוח מייל לד"ר וולף בנוגע לבדיקות של ויסקי</li>
+        <li>לבקש מעדן המזכירה להזמין דפי ממו</li>
+      </ul>
+
+</div>
+
+<script src="main.js"></script>
+</html>

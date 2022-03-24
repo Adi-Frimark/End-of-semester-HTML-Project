@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Employee</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <a href="logo" class="logo"><img src="MSV logo_126x106.jpeg"></a>
+    <div class="topnav">
+        <a class="active" href="newemployee.html"> קליטת עובד חדש</a>
+        <a href="visitsummary.html">סיכום ביקור</a>
+        <a href="client.html">כרטיס לקוח קיים</a>
+        <a href="newclient.html">הוספת לקוח חדש</a>
+        <a href="appointments.html">קביעת תורים</a>
+        <a  href="about.html">About</a>
+        <a href="login.html">כניסה למערכת</a>
+        <a href="index.html">דף הבית</a>
+    </div>
+    <h1>טופס קליטת עובד חדש למערכת</h1>
+    <div  id="empdetailsdiv">
+        <form>
+        <h2 style="text-align: right;">פרטי העובד:</h2>
+        <table id="empdetails">
+            <tr>
+                <td><label for="empfname">שם פרטי:</label><input type="text" required></td>
+                <td><label for="emplname">שם משפחה:</label><input type="text" required></td>
+                <td><label for="empID">תעודת זהות:</label><input type="number" required></td>
+            </tr>
+            <tr>
+                <td><label for="empst">רחוב:</label><input type="text" required></td>
+                <td><label for="empstno">מספר בית:</label><input type="number" required></td>
+                <td><label for="empcity">עיר:</label><input type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="empcellno">מספר טלפון נייד:</label><input type="number" required></td>
+                <td><label for="empno2">מספר טלפון נוסף:</label><input type="number" required></td>
+                <td><label for="empemail">כתובת מייל:</label><input type="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="empaccno">מספר חשבון בנק:</label><input type="number" required></td>
+                <td><label for="empbank"> בנק:</label><select name="bank" required>
+                    <option value="poalim">בנק הפועלים</option>
+                    <option value="discount">בנק דיסקונט</option>
+                    <option value="mizrahi">בנק מזרחי טפחות</option>
+                    <option value="yahav">בנק יהב</option>
+                    <option value="leumi">בנק לאומי</option>
+                    <option value="mercantile">בנק מרכנתיל דיסקונט</option>
+                    <option value="otsar">בנק אוצר החייל</option>
+                    <option value="union">בנק אגוד</option>
+                </td>
+                <td><label for="empbranchno">מספר סניף: </label><input type="number" required></td>
+            </tr>
+            <tr>
+                <td><label for="position">תפקיד:</label><select name="position" required>
+                    <option value="vet">וטרינר/ית</option>
+                    <option value="secretary">מזכיר/ה</option>
+                    <option value="tech">טכנאי/ת</option>
+                    <option value="nurse">אח/ות</option>
+                    <option value="manager">מנהל/ת מרפאה</option>
+                    <option value="accountant">מנהל/ת חשבונות</option>
+                </select></td>
+                <td><label for="authorizationlvl">רמת הרשאה:</label><select name="authorizationlvl" required>
+                    <option value="superadmin">Super-Admin</option>
+                    <option value="admin">admin</option>
+                    <option value="vet">Vet</option>
+                    <option value="nurse/tech">Nurse/Tech</option>
+                    <option value="finances">finances</option>
+                </select></td>
+            </tr>
+        </table>
+        <button type="submit" class="submit-btn">אישור</button>
+
+    </form>
+    </div>
+
+    
+</body>
+</html>

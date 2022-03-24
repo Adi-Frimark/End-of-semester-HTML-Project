@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appoinments</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a href="logo" class="logo"><img src="MSV logo_126x106.jpeg"></a>
+  <div class="topnav">
+    <a href="newemployee.html"> קליטת עובד חדש</a>
+    <a href="visitsummary.html">סיכום ביקור</a>
+    <a href="client.html">כרטיס לקוח קיים </a>
+    <a href="newclient.html">הוספת לקוח חדש</a>
+    <a class="active" href="appointments.html">קביעת תורים</a>
+    <a  href="about.html">About</a>
+    <a href="login.html">כניסה למערכת</a>
+    <a href="index.html">דף הבית</a>
+</div>
+  <h1>קביעת תורים</h1>
+  <div class="month">
+    <ul>
+      <li class="next">&#10094;</li>
+      <li style="color: black;">פברואר<br><span style="font-size:18px;color: black;">2022</span></li>
+    </ul>
+  </div>
+
+  <ul class="weekdays">
+    <li>א</li>
+    <li>ב</li>
+    <li>ג</li>
+    <li>ד</li>
+    <li>ה</li>
+    <li>ו</li>
+    <li>שבת</li>
+  </ul>
+
+  <ul class="days">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li><span class="active">19</span></li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+  </ul><br><br>
+  <div class="form">
+    <form>
+      <fieldset style="width: auto;text-align: center;">
+        <label for="Hours">בחר שעה:</label>
+        <select id="hours" name="hours" required>
+          <option value="09:00">09:00</option>
+          <option value="09:30">09:30</option>
+          <option value="10:00">10:00</option>
+          <option value="10:30">10:30</option>
+          <option value="11:00">11:00</option>
+          <option value="11:30">11:30</option>
+          <option value="12:00">12:00</option>
+          <option value="12:30">12:30</option>
+          <option value="13:00">13:00</option>
+          <option value="13:30">13:30</option>
+          <option value="14:00">14:00</option>
+          <option value="14:30">14:30</option>
+          <option value="15:00">15:00</option>
+          <option value="15:30">15:30</option>
+          <option value="16:00">16:00</option>
+        </select><br><br>
+        <legend><b>פרטי תור:</b></legend>
+        <label for="fname">שם פרטי:</label><br>
+        <input type="text" id="fname" name="fname" required style="border: 1px solid black;"><br>
+        <label for="lname">שם משפחה:</label><br>
+        <input type="text" id="lname" name="lname" required  style="border: 1px solid black;"><br>
+        <label for="cellphone">מס' טלפון נייד:</label><br>
+        <input type="number" id="cellphone" name="cellphone" required  style="border: 1px solid black;"><br>
+        <label for="pname">שם בע"ח:</label><br>
+        <input type="text" id="pname" name="pname" required  style="border: 1px solid black;"><br><br>
+        <label for="Pets">סוג בעל החיים:</label>
+        <select id="Pets" name="Pets" required>
+          <option value="dog">כלב</option>
+          <option value="cat">חתול</option>
+          <option value="parrot">תוכי</option>
+          <option value="rodant">מכרסם</option>
+          <option value="reptile">זוחל</option>
+        </select><br><br>
+        <label for="urgency">דחיפות:</label>
+        <select id="urgency" name="Urgency" required>
+          <option value="normal">רגילה</option>
+          <option value="sos">חירום</option>
+        </select>
+      </fieldset>
+      <button type="submit" class="submit-btn">אישור</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
